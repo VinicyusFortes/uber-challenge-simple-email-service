@@ -10,6 +10,6 @@ public class AwsSesConfig {
 
   @Bean
   public AmazonSimpleEmailService amazonSimpleEmailService() {
-    return AmazonSimpleEmailServiceClientBuilder.standard().build();
+    return AmazonSimpleEmailServiceClientBuilder.defaultClient();
   }
 }
